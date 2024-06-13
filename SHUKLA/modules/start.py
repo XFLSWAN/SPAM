@@ -7,13 +7,13 @@ from config import X1
 START_BUTTON = [
     [Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")],
     [
-        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/SHIVANSH474"),
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/MASTIWITHFRIENDSXD")
+        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/astaad_majhablock"),
+        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/panjabichatting")
     ],
-    [Button.url("• ʀᴇᴘᴏ •", "https://github.com/itzshukla/STRANGER-SPAM-X/fork")]
+    [Button.url("• ᴍᴀɴʙᴇᴇʀ •", "https://t.me/MANBEERVIRK6862")]
 ]
 
-IMAGE_URL = "https://telegra.ph/file/ffdd2d2af9a09ade3dc42.jpg"
+IMAGE_URL = "https://graph.org/file/90005b1183ad8c817ff12.jpg"
 PYTHON_VERSION = "3.11.3"
 STRANGER_VERSION = "M 1.8.31"
 
@@ -28,8 +28,8 @@ def create_start_text(bot_name, bot_id, sender_name, sender_id):
         f"**ʜᴇʏ​ [{sender_name}](tg://user?id={sender_id}),\n\n"
         f"ɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n"
         "━━━━━━━━━━━━━━━━━━━\n\n"
-        f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [SHIVANSH](https://t.me/SHIVANSHDEVS)**\n\n"
-        f"» **sᴛʀᴀɴɢᴇʀ V2 :** `{STRANGER_VERSION}`\n"
+        f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [MANBEER](https://t.me/MANBEERVIRK6862)**\n\n"
+        f"» **ᴍᴀɴʙᴇᴇʀ V2 :** `{STRANGER_VERSION}`\n"
         f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{PYTHON_VERSION}`\n"
         f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n"
         "━━━━━━━━━━━━━━━━━"
