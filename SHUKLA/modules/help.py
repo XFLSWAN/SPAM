@@ -4,16 +4,16 @@ from telethon import events, Button
 from config import X1, SUDO_USERS, CMD_HNDLR as hl
 
 HELP_STRING = (
-    "**sᴛʀᴀɴɢᴇʀ sᴘᴀᴍ ʜᴇʟᴘ ᴍᴇɴᴜ **\n\n"
+    "**ᴍᴀɴʙᴇᴇʀ sᴘᴀᴍ ʜᴇʟᴘ ᴍᴇɴᴜ **\n\n"
     "» ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ\n"
-    "» **ᴅᴇᴠᴇʟᴏᴘᴇʀ**: @SHIVANSHDEVS"
+    "» **ᴅᴇᴠᴇʟᴏᴘᴇʀ**: @MANBEERVIRK6862"
 )
 
 HELP_BUTTONS = [
     [Button.inline("• ꜱᴘᴀᴍ •", data="spam"), Button.inline("• ʀᴀɪᴅ •", data="raid")],
     [Button.inline("• ᴇxᴛʀᴀ •", data="extra")],
-    [Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/SHIVANSH474"),
-     Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/MASTIWITHFRIENDSXD")]
+    [Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/astaad_majhablock"),
+     Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/panjabichatting")]
 ]
 
 EXTRA_MSG = (
@@ -29,7 +29,7 @@ EXTRA_MSG = (
     f"𝗟𝗲𝗮𝘃𝗲: **ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ**\n"
     f"  1) {hl}leave <group/chat id>\n"
     f"  2) {hl}leave : ᴛʏᴘᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏ ʟᴇᴀᴠᴇ ᴛʜᴀᴛ ɢʀᴏᴜᴘ\n\n"
-    f"**@SHIVANSHDEVS**"
+    f"**@MANBEERVIRK6862**"
 )
 
 RAID_MSG = (
@@ -52,7 +52,7 @@ RAID_MSG = (
     f"𝐐𝐑𝐚𝐢𝐝: **ᴀʙᴄᴅ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ.**\n"
     f"  1) {hl}qraid <count> <username>\n"
     f"  2) {hl}qraid <count> <reply to user>\n\n"
-    f"**© @SHIVANSHDEVS**"
+    f"**© @MANBEERVIRK6862**"
 )
 
 SPAM_MSG = (
@@ -64,7 +64,7 @@ SPAM_MSG = (
     f"  1) {hl}pspam <count>\n\n"
     f"𝗛𝗮𝗻𝗴: **ꜱᴘᴀᴍꜱ ʜᴀɴɢɪɴɢ ᴍᴇꜱꜱᴀɢᴇꜱ ꜰᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀ.**\n"
     f"  1) {hl}hang <counter>\n\n"
-    f"**© @SHIVANSHDEVS**"
+    f"**© @MANBEERVIRK6862**"
 )
 
 def is_sudo_user(user_id):
@@ -73,7 +73,7 @@ def is_sudo_user(user_id):
 async def send_help_message(event):
     await event.client.send_file(
         event.chat_id,
-        "https://telegra.ph/file/ffdd2d2af9a09ade3dc42.jpg",
+        "https://graph.org/file/90005b1183ad8c817ff12.jpg",
         caption=HELP_STRING,
         buttons=HELP_BUTTONS
     )
@@ -94,7 +94,7 @@ async def handle_callback_query(event, message, back_button_data):
     )
 
 async def handle_callback_query_error(event):
-    await event.answer("ᴘᴀʜʟᴇ sʜɪᴠᴀɴsʜ ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ☎️ @SHIVANSHDEVS", cache_time=0, alert=True)
+    await event.answer("ᴘᴀʜʟᴇ ᴍᴀɴʙᴇᴇʀ ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ☎️ @MANBEERVIRK6862", cache_time=0, alert=True)
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 async def help(event):
