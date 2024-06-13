@@ -8,7 +8,7 @@
         "PythonX",
         "SpamBots"
     ],
-    "repository": "https://github.com/RDXSHUKLA/SPAM",
+    "repository": "https://github.com/XFLSWAN/SPAM",
     "env": {
         "BOT_TOKEN": {
             "description": "Telegram Bot Token. Get this value from https://t.me/BotFather",
