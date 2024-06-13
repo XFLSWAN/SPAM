@@ -18,7 +18,7 @@ async def ping(event):
         reply_message = await event.reply("❄️")
         end = datetime.now()
         ping_time = (end - start).microseconds / 1000
-        await reply_message.edit(f"💫🥀 🫧 🇸𝗧 𝗥 𝗔 𝗡 𝗚 𝗘 𝗥\n» `{ping_time} ᴍꜱ`")
+        await reply_message.edit(f"💫🥀 🫧🇲 𝐀 𝐍 𝐁 𝐄 𝐄 𝐑\n» `{ping_time} ᴍꜱ`")
     else:
         await prompt_join_channels(event)
 
@@ -39,7 +39,7 @@ async def addsudo(event):
     if event.sender_id == OWNER_ID:
         await manage_sudo_users(event, add=True)
     elif event.sender_id in SUDO_USERS:
-        await event.reply("ᴏɴʟʏ sʜɪᴠᴀɴsʜ ᴄᴀɴ ᴀᴅᴅ sᴜᴅᴏ ᴜsᴇʀs ᴏʀ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʙʏ .ɢᴇᴛsᴜᴅᴏ")
+        await event.reply("ᴏɴʟʏ ᴍᴀɴʙᴇᴇʀ ᴄᴀɴ ᴀᴅᴅ sᴜᴅᴏ ᴜsᴇʀs ᴏʀ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʙʏ .ɢᴇᴛsᴜᴅᴏ")
     else:
         await prompt_join_channels(event)
 
@@ -48,7 +48,7 @@ async def removesudo(event):
     if event.sender_id == OWNER_ID:
         await manage_sudo_users(event, add=False)
     else:
-        await event.reply("ᴏɴʟʏ sʜɪᴠᴀɴsʜ ᴄᴀɴ ʀᴇᴍᴏᴠᴇ sᴜᴅᴏ ᴜsᴇʀs")
+        await event.reply("ᴏɴʟʏ ᴍᴀɴʙᴇᴇʀ ᴄᴀɴ ʀᴇᴍᴏᴠᴇ sᴜᴅᴏ ᴜsᴇʀs")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
 async def show_sudo_users(event):
@@ -56,14 +56,14 @@ async def show_sudo_users(event):
         sudo_users_list = "sᴜᴅᴏ ᴜsᴇʀs ʟɪsᴛ:\n" + "\n".join(f"- {user_id}" for user_id in SUDO_USERS)
         await event.reply(sudo_users_list)
     else:
-        await event.reply("ᴛʜɪs ғᴜɴᴄᴛɪᴏɴ ᴄᴀɴ ᴏɴʟʏ ᴘᴇʀғᴏʀᴍ ʙʏ sʜɪᴠᴀɴsʜ")
+        await event.reply("ᴛʜɪs ғᴜɴᴄᴛɪᴏɴ ᴄᴀɴ ᴏɴʟʏ ᴘᴇʀғᴏʀᴍ ʙʏ ᴍᴀɴʙᴇᴇʀ")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%saddmultisudo(?: |$)(.*)" % hl))
 async def addmultisudo(event):
     if event.sender_id == OWNER_ID:
         await manage_multiple_sudo_users(event)
     elif event.sender_id in SUDO_USERS:
-        await event.reply("ᴏɴʟʏ sʜɪᴠᴀɴsʜ ᴄᴀɴ ᴀᴅᴅ ᴍᴜʟᴛɪsᴜᴅᴏ ᴜsᴇʀs ᴀᴛ ᴀ ᴛɪᴍᴇ.")
+        await event.reply("ᴏɴʟʏ ᴍᴀɴʙᴇᴇʀ ᴄᴀɴ ᴀᴅᴅ ᴍᴜʟᴛɪsᴜᴅᴏ ᴜsᴇʀs ᴀᴛ ᴀ ᴛɪᴍᴇ.")
     else:
         await prompt_join_channels(event)
 
